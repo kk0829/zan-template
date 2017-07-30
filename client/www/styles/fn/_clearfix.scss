@@ -1,0 +1,15 @@
+@mixin has-layout {
+    zoom: 1;
+}
+@mixin clearfix {
+    overflow: hidden;
+    @include has-layout;
+}
+@mixin pie-clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    @include has-layout;
+}
