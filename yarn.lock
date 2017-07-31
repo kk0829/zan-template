@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@youzan/zan@^0.3.16":
-  version "0.3.16"
-  resolved "http://registry.npm.qima-inc.com/@youzan/zan/download/@youzan/zan-0.3.16.tgz#a697b4f21e1479a6be7c2833c40f31d70f2ed45f"
+"@youzan/zan@0.3.18":
+  version "0.3.18"
+  resolved "http://registry.npm.qima-inc.com/@youzan/zan/download/@youzan/zan-0.3.18.tgz#b424908cc36271a55f9d9380b5ba13f560a0a5b0"
   dependencies:
     boxen "1.0.0"
     co "4.6.0"
