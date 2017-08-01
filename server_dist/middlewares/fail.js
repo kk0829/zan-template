@@ -1,6 +1,6 @@
 'use strict';
 
-var _zan = require('@youzan/zan');
+var _zanNode = require('zan-node');
 
 function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
 
@@ -9,10 +9,10 @@ module.exports = (() => {
         try {
             yield next();
         } catch (e) {
-            if (e instanceof _zan.BusinessError) {
+            if (e instanceof _zanNode.BusinessError) {
                 console.log(e.errorContent);
                 // TODO
-            } else if (e instanceof _zan.ParamsError) {
+            } else if (e instanceof _zanNode.ParamsError) {
                 console.log(e.errorContent);
                 // TODO
             } else {

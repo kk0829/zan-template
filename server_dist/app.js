@@ -1,8 +1,8 @@
 'use strict';
 
-var _zan = require('@youzan/zan');
+var _zanNode = require('zan-node');
 
-var _zan2 = _interopRequireDefault(_zan);
+var _zanNode2 = _interopRequireDefault(_zanNode);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -20,4 +20,4 @@ const config = {
     beforeLoadMiddlewares() {}
 };
 
-let zan = new _zan2.default(config);
+let zan = new _zanNode2.default(config);

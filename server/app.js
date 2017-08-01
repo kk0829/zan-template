@@ -1,4 +1,4 @@
-import Zan from '@youzan/zan';
+import Zan from 'zan-node';
 
 /**
  * CDN_PATH 静态资源 CDN 域名

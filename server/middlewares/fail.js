@@ -1,4 +1,4 @@
-import { BusinessError, ParamsError } from '@youzan/zan';
+import { BusinessError, ParamsError } from 'zan-node';
 
 module.exports = async(ctx, next) => {
     try {

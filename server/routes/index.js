@@ -1,6 +1,6 @@
 import auth from '../policies/auth';
 import IndexController from '../controllers/index';
-import { router } from '@youzan/zan';
+import { router } from 'zan-node';
 
 router.get('/', auth, IndexController.getIndexHtml);
 
