@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "zan template",
   "dependencies": {
-    "@youzan/zan": "0.3.18",
+    "zan-node": "latest",
     "koa-router": "7.0.1",
     "lodash": "4.17.4"
   },
