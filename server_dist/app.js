@@ -4,6 +4,10 @@ var _zanNode = require('zan-node');
 
 var _zanNode2 = _interopRequireDefault(_zanNode);
 
+var _middlewares = require('./middlewares');
+
+var _middlewares2 = _interopRequireDefault(_middlewares);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /**
@@ -17,7 +21,12 @@ const config = {
     KEYS: ['your-key', 'your-secret'],
     CDN_PATH: '//b.yzcdn.cn',
     VERSION_LIST: ['./config/version_css.json', './config/version_wap_css.json', './config/version_js.json', './config/version_wap_js.json'],
-    beforeLoadMiddlewares() {}
+    beforeLoadMiddlewares() {
+        this.middlewares.push({
+            name: 'fail',
+            fn: _middlewares2.default.fail
+        });
+    }
 };
 
 let zan = new _zanNode2.default(config);
