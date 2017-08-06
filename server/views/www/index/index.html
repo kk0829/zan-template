@@ -1,7 +1,7 @@
 {% extends './base.html' %}
 
 {% block page_style %}
-	{{ loadCss('www/styles/pages/index/index') }}
+	{{ loadCss('www/styles/pages/index/index') | safe }}
 {% endblock %}
 
 {% block page_content %}
@@ -11,5 +11,5 @@
 {% endblock %}
 
 {% block page_script %}
-	{{ loadJs('www/js/src/index') }}
+	{{ loadJs('www/js/src/index') | safe }}
 {% endblock %}

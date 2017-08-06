@@ -11,12 +11,12 @@
         <meta name="description" content="{{description}}" />
         <link rel="icon" href="//img.yzcdn.cn/v2/image/yz_fc.ico">
         {% block base_style %}
-            {{ loadCss('www/styles/common/base') }}
+            {{ loadCss('www/styles/common/base') | safe }}
         {% endblock %}
         {% block project_style %}{% endblock %}
         {% block page_style %}{% endblock %}
         <script>
-            window._global = {% autoescape false %}{{ _global ? _global || {} }}{% endautoescape %};
+            window._global = {{ _global | safe }}
         </script>
     </head>
     <body>
