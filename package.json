@@ -19,6 +19,6 @@
     "type": "git",
     "url": ""
   },
-  "author": "<%= author %>",
+  "author": "",
   "license": "MIT"
 }

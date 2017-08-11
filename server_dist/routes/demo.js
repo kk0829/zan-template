@@ -20,5 +20,6 @@ _zanNode.router.get('/demo/todo/:id(\\d+).json', _auth2.default, _demo2.default.
 _zanNode.router.post('/demo/todo.json', _auth2.default, _demo2.default.createJson);
 _zanNode.router.put('/demo/todo/:id(\\d+).json', _auth2.default, _demo2.default.updateByIdJson);
 _zanNode.router.delete('/demo/todo/:id(\\d+).json', _auth2.default, _demo2.default.deleteByIdJson);
+_zanNode.router.post('/demo/upload', _demo2.default.doUpload);
 
 module.exports = _zanNode.router;

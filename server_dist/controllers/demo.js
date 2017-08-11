@@ -86,6 +86,16 @@ const DemoController = (_dec = (0, _log2.default)(), (_obj = {
             const id = ctx.params.id;
             ctx.body = yield new _demo4.default(ctx).deleteById(id);
         })();
+    },
+
+    doUpload(ctx) {
+        return _asyncToGenerator(function* () {
+            const body = ctx.request.body;
+            const files = body.files;
+            console.log(files);
+            console.log(files['test.jpg']);
+            console.log(files['test.jpg'].path);
+        })();
     }
 
 }, (_applyDecoratedDescriptor(_obj, 'findByIdJson', [_dec], Object.getOwnPropertyDescriptor(_obj, 'findByIdJson'), _obj)), _obj));

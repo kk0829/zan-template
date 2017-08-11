@@ -1,0 +1,53 @@
+{
+    "project": {
+        "projectName": "zan-template-www"
+    },
+    "hash": [
+        {
+            "src": "../../static/build/www/**/*.js",
+            "type": "json",
+            "dest": "../../server/config/version_js.json",
+            "recordTpl": "\"<%= name %>\" : \"zan-template-www/<%= name %>_<%= hash %>.<%= extension %>\""
+        },
+        {
+            "src": "../../static/build/www/**/*.css",
+            "type": "json",
+            "dest": "../../server/config/version_css.json",
+            "recordTpl": "\"<%= name %>\" : \"zan-template-www/<%= name %>_<%= hash %>.<%= extension %>\""
+        }
+    ],
+    "cdn": {
+        "basic": {
+            "src": [
+                "../../static/build/www/**/*.js",
+                "../../static/build/www/**/*.css"
+            ],
+            "dist": "/zan-template-www"
+        },
+        "img": {
+            "src": [
+                "../../client/www/img/**/*.*"
+            ],
+            "dist": "/zan-template-www/img"
+        }
+    },
+    "build": {
+        "extra": {
+            "shims": "",
+            "paths": "",
+            "commonModule": "",
+            "appendEntry": true
+        },
+        "confPath": "",
+        "js": {
+            "src": "./",
+            "local": "../../static/local/www",
+            "build": "../../static/build/www"
+        },
+        "css": {
+            "src": "./",
+            "local": "../../static/local/www",
+            "build": "../../static/build/www"
+        }
+    }
+}
