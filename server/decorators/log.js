@@ -1,3 +1,7 @@
+/**
+ * 带参数 Decorator
+ * 打印方法执行日志
+ */
 export default function () {
     return (target, name, descriptor) => {
         const method = descriptor.value;
