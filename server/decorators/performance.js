@@ -1,6 +1,5 @@
 /**
- * 无参 Decorator
- * 统计方法执行时间
+ * 场景2：统计方法执行时间
  */
 export default (target, name, descriptor) => {
     const method = descriptor.value;

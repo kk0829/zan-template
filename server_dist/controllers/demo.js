@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _dec, _desc, _value, _obj;
+var _dec, _dec2, _dec3, _desc, _value, _obj;
 
 var _demo = require('../services/demo1');
 
@@ -17,6 +17,12 @@ var _demo4 = _interopRequireDefault(_demo3);
 var _log = require('../decorators/log');
 
 var _log2 = _interopRequireDefault(_log);
+
+var _performance = require('../decorators/performance');
+
+var _performance2 = _interopRequireDefault(_performance);
+
+var _permission = require('../decorators/permission');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -51,8 +57,7 @@ function _applyDecoratedDescriptor(target, property, decorators, descriptor, con
     return desc;
 }
 
-const DemoController = (_dec = (0, _log2.default)(), (_obj = {
-
+const DemoController = (_dec = (0, _log2.default)(), _dec2 = (0, _permission.needAuth)('admin'), _dec3 = (0, _log2.default)(), (_obj = {
     getDemoHtml(ctx) {
         return _asyncToGenerator(function* () {
             return yield ctx.render('www/demo/index.html');
@@ -98,6 +103,6 @@ const DemoController = (_dec = (0, _log2.default)(), (_obj = {
         })();
     }
 
-}, (_applyDecoratedDescriptor(_obj, 'findByIdJson', [_dec], Object.getOwnPropertyDescriptor(_obj, 'findByIdJson'), _obj)), _obj));
+}, (_applyDecoratedDescriptor(_obj, 'getDemoHtml', [_dec, _performance2.default, _dec2], Object.getOwnPropertyDescriptor(_obj, 'getDemoHtml'), _obj), _applyDecoratedDescriptor(_obj, 'findByIdJson', [_dec3], Object.getOwnPropertyDescriptor(_obj, 'findByIdJson'), _obj)), _obj));
 
 exports.default = DemoController;
