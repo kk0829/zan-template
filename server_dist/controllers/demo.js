@@ -97,9 +97,8 @@ const DemoController = (_dec = (0, _log2.default)(), _dec2 = (0, _permission.nee
         return _asyncToGenerator(function* () {
             const body = ctx.request.body;
             const files = body.files;
+            // TODO
             console.log(files);
-            console.log(files['test.jpg']);
-            console.log(files['test.jpg'].path);
         })();
     }
 
