@@ -7,13 +7,13 @@
             "src": "../../static/build/www/**/*.js",
             "type": "json",
             "dest": "../../server/config/version_js.json",
-            "recordTpl": "\"<%= name %>\" : \"zan-template-www/<%= name %>_<%= hash %>.<%= extension %>\""
+            "recordTpl": "\"www/<%= name %>\" : \"zan-template-www/<%= name %>_<%= hash %>.<%= extension %>\""
         },
         {
             "src": "../../static/build/www/**/*.css",
             "type": "json",
             "dest": "../../server/config/version_css.json",
-            "recordTpl": "\"<%= name %>\" : \"zan-template-www/<%= name %>_<%= hash %>.<%= extension %>\""
+            "recordTpl": "\"www/<%= name %>\" : \"zan-template-www/<%= name %>_<%= hash %>.<%= extension %>\""
         }
     ],
     "cdn": {
