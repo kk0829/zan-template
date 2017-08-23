@@ -33,13 +33,6 @@ const DemoController = {
     async deleteByIdJson(ctx) {
         const id = ctx.params.id;
         ctx.body = await new Demo2Service(ctx).deleteById(id);
-    },
-
-    async doUpload(ctx) {
-        const body = ctx.request.body;
-        const files = body.files;
-        // TODO
-        console.log(files);
     }
 
 };

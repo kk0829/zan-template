@@ -10,6 +10,5 @@ router.get('/demo/todo/:id(\\d+).json', auth, DemoController.findByIdJson);
 router.post('/demo/todo.json', auth, DemoController.createJson);
 router.put('/demo/todo/:id(\\d+).json', auth, DemoController.updateByIdJson);
 router.delete('/demo/todo/:id(\\d+).json', auth, DemoController.deleteByIdJson);
-router.post('/demo/upload', DemoController.doUpload);
 
 module.exports = router;

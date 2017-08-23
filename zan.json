@@ -14,9 +14,5 @@
             "src": "./server",
             "dest": "./server_dist"
         }
-    ],
-    "superman": [
-        "./client/www/",
-        "./client/wap/"
     ]
 }
