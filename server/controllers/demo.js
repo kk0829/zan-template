@@ -10,7 +10,7 @@ const DemoController = {
     @performance
     @needAuth('admin')
     async getDemoHtml(ctx) {
-        return await ctx.render('www/demo/index.html');
+        return await ctx.render('pc/demo/index.html');
     },
 
     @log()

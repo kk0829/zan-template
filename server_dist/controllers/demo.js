@@ -60,7 +60,7 @@ function _applyDecoratedDescriptor(target, property, decorators, descriptor, con
 const DemoController = (_dec = (0, _log2.default)(), _dec2 = (0, _permission.needAuth)('admin'), _dec3 = (0, _log2.default)(), (_obj = {
     getDemoHtml(ctx) {
         return _asyncToGenerator(function* () {
-            return yield ctx.render('www/demo/index.html');
+            return yield ctx.render('pc/demo/index.html');
         })();
     },
 
@@ -90,15 +90,6 @@ const DemoController = (_dec = (0, _log2.default)(), _dec2 = (0, _permission.nee
         return _asyncToGenerator(function* () {
             const id = ctx.params.id;
             ctx.body = yield new _demo4.default(ctx).deleteById(id);
-        })();
-    },
-
-    doUpload(ctx) {
-        return _asyncToGenerator(function* () {
-            const body = ctx.request.body;
-            const files = body.files;
-            // TODO
-            console.log(files);
         })();
     }
 

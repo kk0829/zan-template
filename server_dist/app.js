@@ -20,7 +20,7 @@ const config = {
     STATIC_PATH: '../static/local/',
     KEYS: ['your-key', 'your-secret'],
     CDN_PATH: '//b.yzcdn.cn',
-    VERSION_LIST: ['./config/version_css.json', './config/version_wap_css.json', './config/version_js.json', './config/version_wap_js.json'],
+    VERSION_LIST: ['./config/version_css.json', './config/version_h5_css.json', './config/version_js.json', './config/version_h5_js.json'],
     beforeLoadMiddlewares() {
         this.middlewares.push({
             name: 'fail',

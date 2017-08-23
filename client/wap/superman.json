@@ -1,34 +1,34 @@
 {
     "project": {
-        "projectName": "zan-template-wap"
+        "projectName": "zan-template-h5"
     },
     "hash": [
         {
-            "src": "../../static/build/wap/**/*.js",
+            "src": "../../static/build/h5/**/*.js",
             "type": "json",
-            "dest": "../../server/config/version_wap_js.json",
-            "recordTpl": "\"wap/<%= name %>\" : \"zan-template-wap/<%= name %>_<%= hash %>.<%= extension %>\""
+            "dest": "../../server/config/version_h5_js.json",
+            "recordTpl": "\"h5/<%= name %>\" : \"zan-template-h5/<%= name %>_<%= hash %>.<%= extension %>\""
         },
         {
-            "src": "../../static/build/wap/**/*.css",
+            "src": "../../static/build/h5/**/*.css",
             "type": "json",
-            "dest": "../../server/config/version_wap_css.json",
-            "recordTpl": "\"wap/<%= name %>\" : \"zan-template-wap/<%= name %>_<%= hash %>.<%= extension %>\""
+            "dest": "../../server/config/version_h5_css.json",
+            "recordTpl": "\"h5/<%= name %>\" : \"zan-template-h5/<%= name %>_<%= hash %>.<%= extension %>\""
         }
     ],
     "cdn": {
         "basic": {
             "src": [
-                "../../static/build/wap/**/*.js",
-                "../../static/build/wap/**/*.css"
+                "../../static/build/h5/**/*.js",
+                "../../static/build/h5/**/*.css"
             ],
-            "dist": "/zan-template-wap"
+            "dist": "/zan-template-h5"
         },
         "img": {
             "src": [
-                "../../client/wap/img/**/*.*"
+                "../../client/h5/img/**/*.*"
             ],
-            "dist": "/zan-template-wap/img"
+            "dist": "/zan-template-h5/img"
         }
     },
     "build": {
@@ -41,13 +41,13 @@
         "confPath": "",
         "js": {
             "src": "./",
-            "local": "../../static/local/wap",
-            "build": "../../static/build/wap"
+            "local": "../../static/local/h5",
+            "build": "../../static/build/h5"
         },
         "css": {
             "src": "./",
-            "local": "../../static/local/wap",
-            "build": "../../static/build/wap"
+            "local": "../../static/local/h5",
+            "build": "../../static/build/h5"
         }
     }
 }

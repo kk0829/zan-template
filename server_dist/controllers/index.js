@@ -10,7 +10,7 @@ const IndexController = {
 
     getIndexHtml(ctx) {
         return _asyncToGenerator(function* () {
-            return yield ctx.render('www/index/index.html');
+            return yield ctx.render('pc/index/index.html');
         })();
     }
 

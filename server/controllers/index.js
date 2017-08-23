@@ -1,7 +1,7 @@
 const IndexController = {
 
     async getIndexHtml(ctx) {
-        return await ctx.render('www/index/index.html');
+        return await ctx.render('pc/index/index.html');
     }
 
 };

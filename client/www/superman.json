@@ -1,34 +1,34 @@
 {
     "project": {
-        "projectName": "zan-template-www"
+        "projectName": "zan-template-pc"
     },
     "hash": [
         {
-            "src": "../../static/build/www/**/*.js",
+            "src": "../../static/build/pc/**/*.js",
             "type": "json",
             "dest": "../../server/config/version_js.json",
-            "recordTpl": "\"www/<%= name %>\" : \"zan-template-www/<%= name %>_<%= hash %>.<%= extension %>\""
+            "recordTpl": "\"pc/<%= name %>\" : \"zan-template-pc/<%= name %>_<%= hash %>.<%= extension %>\""
         },
         {
-            "src": "../../static/build/www/**/*.css",
+            "src": "../../static/build/pc/**/*.css",
             "type": "json",
             "dest": "../../server/config/version_css.json",
-            "recordTpl": "\"www/<%= name %>\" : \"zan-template-www/<%= name %>_<%= hash %>.<%= extension %>\""
+            "recordTpl": "\"pc/<%= name %>\" : \"zan-template-pc/<%= name %>_<%= hash %>.<%= extension %>\""
         }
     ],
     "cdn": {
         "basic": {
             "src": [
-                "../../static/build/www/**/*.js",
-                "../../static/build/www/**/*.css"
+                "../../static/build/pc/**/*.js",
+                "../../static/build/pc/**/*.css"
             ],
-            "dist": "/zan-template-www"
+            "dist": "/zan-template-pc"
         },
         "img": {
             "src": [
-                "../../client/www/img/**/*.*"
+                "../../client/pc/img/**/*.*"
             ],
-            "dist": "/zan-template-www/img"
+            "dist": "/zan-template-pc/img"
         }
     },
     "build": {
@@ -41,13 +41,13 @@
         "confPath": "",
         "js": {
             "src": "./",
-            "local": "../../static/local/www",
-            "build": "../../static/build/www"
+            "local": "../../static/local/pc",
+            "build": "../../static/build/pc"
         },
         "css": {
             "src": "./",
-            "local": "../../static/local/www",
-            "build": "../../static/build/www"
+            "local": "../../static/local/pc",
+            "build": "../../static/build/pc"
         }
     }
 }
