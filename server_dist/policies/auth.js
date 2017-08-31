@@ -8,13 +8,18 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
  * Controller 的前置层，在进入Controller 之前过滤一下；
  * 权限验证：登录校验、token 校验
  */
-module.exports = (() => {
-  var _ref = _asyncToGenerator(function* (ctx, next) {
-    // TODO 添加权限校验逻辑
-    yield next();
-  });
 
-  return function (_x, _x2) {
-    return _ref.apply(this, arguments);
-  };
+module.exports = (() => {
+    var _ref = _asyncToGenerator(function* (ctx, next) {
+        if (true) {
+            // 不需要登录
+            yield next();
+        } else {// 需要登录
+
+        }
+    });
+
+    return function (_x, _x2) {
+        return _ref.apply(this, arguments);
+    };
 })();
