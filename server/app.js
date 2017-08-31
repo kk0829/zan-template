@@ -1,5 +1,6 @@
 import Zan from 'zan-node';
 import middlewares from './middlewares';
+import auth from './policies/auth';
 
 /**
  * CDN_PATH 静态资源 CDN 域名
@@ -18,6 +19,14 @@ const config = {
         './config/version_h5_js.json'
     ],
     beforeLoadMiddlewares() {
+        this.middlewares.push({
+            name: '_global',
+            fn: middlewares._global
+        });
+        this.middlewares.push({
+            name: 'auth',
+            fn: auth
+        });
         this.middlewares.push({
             name: 'fail',
             fn: middlewares.fail
