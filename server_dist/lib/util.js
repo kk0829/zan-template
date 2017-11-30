@@ -8,7 +8,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 const NODE_ENV = process.env.NODE_ENV;
 const envPath = `../config/config.${NODE_ENV}.js`;
-const commonConfig = require('../config/common.js');
+const commonConfig = require('../config/config.default.js');
 const envConfig = require(envPath);
 const obj = _lodash2.default.defaultsDeep({}, envConfig, commonConfig);
 
