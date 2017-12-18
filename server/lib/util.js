@@ -8,16 +8,16 @@ const obj = lodash.defaultsDeep({}, envConfig, commonConfig);
 
 const Util = {
 
-    getConfig(name) {
-        let arr = name.split('.');
-        let result = obj;
-        let i = 0;
-        while (arr[i]) {
-            result = result[arr[i]];
-            i++;
-        }
-        return result;
+  getConfig(name) {
+    let arr = name.split('.');
+    let result = obj;
+    let i = 0;
+    while (arr[i]) {
+      result = result[arr[i]];
+      i++;
     }
+    return result;
+  }
 
 };
 
