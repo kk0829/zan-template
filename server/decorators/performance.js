@@ -1,7 +1,7 @@
 /**
  * 场景2：统计方法执行时间
  */
-export default (target, name, descriptor) => {
+module.exports = (target, name, descriptor) => {
   const method = descriptor.value;
   descriptor.value = async(...args) => {
     const t1 = Date.now();

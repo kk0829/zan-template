@@ -1,7 +1,7 @@
 /**
  * 场景1：打印方法执行日志
  */
-export default function() {
+module.exports = function() {
   return (target, name, descriptor) => {
     const method = descriptor.value;
     descriptor.value = async(...args) => {
