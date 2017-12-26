@@ -1,14 +1,15 @@
 {
   "presets": [
-        [
-            "env",
+    [
+      "env",
       {
-        "targets": {
+        "targets":
+        {
           "node": "6.10.0"
         },
-        "debug": true
-            }
-        ]
-    ],
+        "debug": false
+      }
+    ]
+  ],
   "plugins": ["transform-decorators-legacy"]
 }
