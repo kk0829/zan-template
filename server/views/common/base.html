@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="renderer" content="webkit">
+  <meta name="referrer" content="always">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>{{title}}</title>
+  <meta name="keywords" content="{{keywords}}" />
+  <meta name="description" content="{{description}}" />
+  <link rel="icon" href="//img.yzcdn.cn/v2/image/yz_fc.ico">
+
+  {% block base_style %}
+    {{ loadCss('styles/common/base') | safe }}
+  {% endblock %}
+
+  {% block project_style %}
+  {% endblock %}
+
+  {% block page_style %}
+  {% endblock %}
+
+  <script>
+    window._global = {{ _global | safe }}
+  </script>
+</head>
+
+<body>
+  {% block base_header %}
+  {% endblock %}
+
+  {% block page_content %}
+  {% endblock %}
+
+  {% block base_footer %}
+  {% endblock %}
+
+  {% block base_script %}
+  {% endblock %}
+
+  {% block project_script %}
+  {% endblock %}
+
+  {% block page_script %}
+  {% endblock %}
+
+  {% block tongji_script %}
+  {% endblock %}
+</body>
+
+</html>

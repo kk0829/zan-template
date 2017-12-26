@@ -1,0 +1,15 @@
+{% extends './base.html' %}
+
+{% block page_style %}
+  {{ loadCss('styles/pages/index/index') | safe }}
+{% endblock %}
+
+{% block page_content %}
+<div id="app">
+  This is index page.
+</div>
+{% endblock %}
+
+{% block page_script %}
+  {{ loadJs('js/src/index') | safe }}
+{% endblock %}

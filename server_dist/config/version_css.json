@@ -1,4 +1,4 @@
 {
-    "pc/styles/common/base" : "zan-template-pc/styles/common/base_381c3c3bc0a7e90436a518b64a331c10.css",
-    "pc/styles/pages/index/index" : "zan-template-pc/styles/pages/index/index_d41d8cd98f00b204e9800998ecf8427e.css"
+    "styles/common/base" : "zan-template/styles/common/base_381c3c3bc0a7e90436a518b64a331c10.css",
+    "styles/pages/index/index" : "zan-template/styles/pages/index/index_d41d8cd98f00b204e9800998ecf8427e.css"
 }

@@ -1,4 +1,4 @@
-import { BusinessError, ParamsError } from 'zan-node';
+const { BusinessError, ParamsError } = require('zan-node');
 
 module.exports = async(ctx, next) => {
   try {

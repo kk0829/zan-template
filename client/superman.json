@@ -1,0 +1,53 @@
+{
+  "project": {
+    "projectName": "zan-template"
+  },
+  "hash": [
+    {
+      "src": "../static/build/**/*.js",
+      "type": "json",
+      "dest": "../server/config/version_js.json",
+      "recordTpl": "\"<%= name %>\" : \"zan-template/<%= name %>_<%= hash %>.<%= extension %>\""
+        },
+    {
+      "src": "../static/build/**/*.css",
+      "type": "json",
+      "dest": "../server/config/version_css.json",
+      "recordTpl": "\"<%= name %>\" : \"zan-template/<%= name %>_<%= hash %>.<%= extension %>\""
+        }
+    ],
+  "cdn": {
+    "basic": {
+      "src": [
+                "../static/build/**/*.js",
+                "../static/build/**/*.css"
+            ],
+      "dist": "/zan-template"
+    },
+    "img": {
+      "src": [
+                "./img/**/*.*"
+            ],
+      "dist": "/zan-template/img"
+    }
+  },
+  "build": {
+    "extra": {
+      "shims": "",
+      "paths": "",
+      "commonModule": "",
+      "appendEntry": true
+    },
+    "confPath": "",
+    "js": {
+      "src": "./",
+      "local": "../static/local",
+      "build": "../static/build"
+    },
+    "css": {
+      "src": "./",
+      "local": "../static/local",
+      "build": "../static/build"
+    }
+  }
+}

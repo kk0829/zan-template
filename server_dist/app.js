@@ -1,16 +1,13 @@
 'use strict';
 
-var _zanNode = require('zan-node');
-
-var _zanNode2 = _interopRequireDefault(_zanNode);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+const Zan = require('zan-node');
 
 const config = {
-   SERVER_ROOT: __dirname,
-   STATIC_PATH: '../static/local/',
-   KEYS: ['your-key', 'your-secret'],
-   CDN_PATH: '//b.yzcdn.cn'
+  SERVER_ROOT: __dirname,
+  STATIC_PATH: '../static/local/',
+  KEYS: ['your-key', 'your-secret'],
+  CDN_PATH: '//b.yzcdn.cn',
+  AUTO_MIDDLEWARE: true
 };
 
-let zan = new _zanNode2.default(config);
+let zan = new Zan(config);
