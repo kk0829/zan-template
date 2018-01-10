@@ -11,7 +11,7 @@ module.exports = async(ctx, next) => {
       console.log(e.errorContent);
       // TODO
     } else {
-      throw new Error(e);
+      throw e;
     }
   }
 };
