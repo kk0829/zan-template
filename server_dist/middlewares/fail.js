@@ -16,7 +16,7 @@ module.exports = (() => {
         console.log(e.errorContent);
         // TODO
       } else {
-        throw new Error(e);
+        throw e;
       }
     }
   });
